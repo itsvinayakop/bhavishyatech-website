@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function StudentNav() {
   return (
     <nav className="student-nav">
-      <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '1rem' }}>
+      <a href="https://bhavishyatech.com" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '1rem' }}>
         <div className="ft-outfit" style={{ fontSize: '1.25rem', fontWeight: 900, color: 'var(--sw-black)', textTransform: 'uppercase', letterSpacing: '-0.02em' }}>
           Bhavishya <span style={{ color: 'var(--sw-yellow)' }}>Tech</span>
         </div>
@@ -11,10 +11,10 @@ function StudentNav() {
         <div className="ft-outfit" style={{ fontSize: '0.75rem', fontWeight: 800, color: 'var(--sw-black)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
           OFFLINE STUDIO
         </div>
-      </Link>
+      </a>
       
       <div className="hidden md:flex" style={{ display: 'flex', alignItems: 'center' }}>
-        <Link to="/" className="nav-link">Main Website</Link>
+        <a href="https://bhavishyatech.com" className="nav-link">Main Website</a>
         <a href="#why-join" className="nav-link">Value</a>
         <a href="#curriculum" className="nav-link">Curriculum</a>
         <a href="#internships" className="nav-link">Openings</a>

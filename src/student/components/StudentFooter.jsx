@@ -28,7 +28,7 @@ function StudentFooter() {
           <div>
             <h4 className="ft-outfit" style={{ color: 'var(--sw-white)', fontWeight: 800, marginBottom: '2rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Legal</h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-              <li><Link to="/" className="nav-link" style={{ margin: 0, color: '#888' }}>Main Site</Link></li>
+              <li><a href="https://bhavishyatech.com" className="nav-link" style={{ margin: 0, color: '#888' }}>Main Site</a></li>
               <li><a href="#" className="nav-link" style={{ margin: 0, color: '#888' }}>Privacy</a></li>
               <li><a href="#" className="nav-link" style={{ margin: 0, color: '#888' }}>Terms</a></li>
             </ul>
