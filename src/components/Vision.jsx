@@ -14,7 +14,7 @@ export default function Vision() {
       <div className="sanskrit-ring" style={{ width: 420, height: 420 }} />
       <div className="sanskrit-ring" style={{ width: 580, height: 580, animationDelay: '2s' }} />
 
-      <div style={{ maxWidth: 1320, margin: '0 auto', padding: '0 3rem', position: 'relative' }}>
+      <div style={{ maxWidth: 1400, margin: '0 auto', padding: '0 2rem', position: 'relative' }}>
 
         {/* Overline */}
         <div className="vision-reveal" style={{ textAlign: 'center', marginBottom: 40 }}>
@@ -29,7 +29,7 @@ export default function Vision() {
         <div className="vision-reveal" style={{ textAlign: 'center', marginBottom: 12 }}>
           <div className="sanskrit-word" style={{
             fontSize: 'clamp(3.5rem, 10vw, 7.5rem)',
-            fontWeight: 300,
+            fontWeight: 400,
             display: 'inline-block',
           }}>
             भविष्य
@@ -39,7 +39,7 @@ export default function Vision() {
         {/* Translation — tight under the word */}
         <div className="vision-reveal" style={{ textAlign: 'center', marginBottom: 48 }}>
           <span className="ft-serif" style={{
-            fontStyle: 'italic', fontWeight: 300,
+            fontStyle: 'italic', fontWeight: 400,
             fontSize: 15, color: 'var(--bt-muted-2)',
             letterSpacing: '0.04em',
           }}>
@@ -57,7 +57,7 @@ export default function Vision() {
             Future
           </span>
           <span className="ft-body" style={{
-            fontSize: 11, fontWeight: 300, color: 'var(--bt-muted-2)',
+            fontSize: 11, fontWeight: 400, color: 'var(--bt-muted-2)',
             marginLeft: 6,
           }}>
             — Sanskrit
@@ -84,14 +84,14 @@ export default function Vision() {
           {/* Right — body text with border */}
           <div style={{ borderLeft: '1px solid var(--bt-border)', paddingLeft: '3rem' }}>
             <p className="ft-body" style={{
-              fontSize: 15.5, fontWeight: 300, lineHeight: 1.85,
+              fontSize: 18, fontWeight: 400, lineHeight: 1.7,
               color: 'var(--bt-ink-2)', marginBottom: 20,
             }}>
               Bhavishya Tech exists to engineer future-ready digital systems
               that remain intelligent, scalable, and trusted for years ahead.
             </p>
             <p className="ft-body" style={{
-              fontSize: 15, fontWeight: 300, lineHeight: 1.85,
+              fontSize: 17, fontWeight: 400, lineHeight: 1.7,
               color: 'var(--bt-muted)',
             }}>
               Through rigorous engineering, thoughtful design, and systems-driven
@@ -121,7 +121,7 @@ export default function Vision() {
               <h3 className="ft-display" style={{ fontSize: 16, fontWeight: 500, letterSpacing: '-0.01em', color: 'var(--bt-ink)', marginBottom: 8 }}>
                 {p.title}
               </h3>
-              <p className="ft-body" style={{ fontSize: 13, fontWeight: 300, color: 'var(--bt-muted)', lineHeight: 1.6 }}>
+              <p className="ft-body" style={{ fontSize: 13, fontWeight: 400, color: 'var(--bt-muted)', lineHeight: 1.6 }}>
                 {p.desc}
               </p>
             </div>

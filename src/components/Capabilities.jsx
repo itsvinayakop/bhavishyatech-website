@@ -78,8 +78,8 @@ function ServiceCard({ service }) {
 
       {/* Description */}
       <p className="ft-body" style={{
-        fontSize: 14, fontWeight: 300, color: 'var(--bt-muted)',
-        lineHeight: 1.7,
+        fontSize: 16, fontWeight: 400, color: 'var(--bt-muted)',
+        lineHeight: 1.6,
       }}>
         {service.desc}
       </p>
@@ -103,7 +103,7 @@ export default function Capabilities() {
         pointerEvents: 'none',
       }} />
 
-      <div style={{ maxWidth: 1320, margin: '0 auto', padding: '0 3rem', position: 'relative' }}>
+      <div style={{ maxWidth: 1400, margin: '0 auto', padding: '0 2rem', position: 'relative' }}>
 
         {/* Section Header */}
         <div className="reveal" style={{
@@ -125,11 +125,11 @@ export default function Capabilities() {
           </div>
           <div style={{ display: 'flex', alignItems: 'flex-end' }}>
             <p className="ft-body" style={{
-              fontSize: 15.5, fontWeight: 300, color: 'var(--bt-muted)', lineHeight: 1.75,
+              fontSize: 15.5, fontWeight: 400, color: 'var(--bt-muted)', lineHeight: 1.75,
             }}>
               From your first website to enterprise-grade software — we design and engineer
               digital solutions that are{' '}
-              <span className="ft-serif" style={{ fontStyle: 'italic', fontWeight: 300, color: 'var(--bt-ink-2)', fontSize: '1.05em' }}>
+              <span className="ft-serif" style={{ fontStyle: 'italic', fontWeight: 400, color: 'var(--bt-ink-2)', fontSize: '1.05em' }}>
                 built to grow with your business.
               </span>
             </p>

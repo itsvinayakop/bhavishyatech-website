@@ -27,7 +27,7 @@ export default function Contact() {
   return (
     <section id="contact" data-testid="contact-section" className="section-glow"
       style={{ paddingTop: '8rem', paddingBottom: '8rem' }}>
-      <div style={{ maxWidth: 1320, margin: '0 auto', padding: '0 3rem' }}>
+      <div style={{ maxWidth: 1400, margin: '0 auto', padding: '0 2rem' }}>
 
         {/* Header */}
         <div className="reveal" style={{ marginBottom: 72 }}>
@@ -42,7 +42,7 @@ export default function Contact() {
             Let's build <span className="serif-accent" style={{ fontSize: '1.08em' }}>something</span><br />
             enduring.
           </h2>
-          <p className="ft-body" style={{ fontSize: 15.5, fontWeight: 300, color: 'var(--bt-muted)', lineHeight: 1.75, marginTop: 28, maxWidth: 600 }}>
+          <p className="ft-body" style={{ fontSize: 17, fontWeight: 400, color: 'var(--bt-muted)', lineHeight: 1.7, marginTop: 28, maxWidth: 600 }}>
             Whether you're shaping a new product, modernizing a legacy platform, or scaling
             an engineering team — we'd welcome the conversation. Reach out through any of the
             channels below.
@@ -58,13 +58,13 @@ export default function Contact() {
               </span>
               <div style={{ marginTop: 20, marginBottom: 16 }}>
                 <a href={`mailto:${ch.email}`} className="ft-display"
-                   style={{ fontSize: 16, fontWeight: 500, color: 'var(--bt-ink)', textDecoration: 'none', transition: 'color 0.4s ease', letterSpacing: '-0.01em' }}
+                   style={{ fontSize: 18, fontWeight: 500, color: 'var(--bt-ink)', textDecoration: 'none', transition: 'color 0.4s ease', letterSpacing: '-0.01em' }}
                    onMouseEnter={(e) => e.target.style.color = 'var(--bt-bronze)'}
                    onMouseLeave={(e) => e.target.style.color = 'var(--bt-ink)'}>
                   {ch.email}
                 </a>
               </div>
-              <span className="ft-body" style={{ fontSize: 12, fontWeight: 300, color: 'var(--bt-muted)' }}>
+              <span className="ft-body" style={{ fontSize: 12, fontWeight: 400, color: 'var(--bt-muted)' }}>
                 Response: {ch.response}
               </span>
             </div>
@@ -74,13 +74,13 @@ export default function Contact() {
           <div className="contact-card" data-testid="contact-studio">
             <span className="ft-body" style={{ fontSize: 10.5, color: 'var(--bt-muted-2)', letterSpacing: '0.18em', textTransform: 'uppercase' }}>The Studio</span>
             <div style={{ marginTop: 20 }}>
-              <p className="ft-body" style={{ fontSize: 14, fontWeight: 300, color: 'var(--bt-ink-2)', lineHeight: 1.65, marginBottom: 12 }}>
+              <p className="ft-body" style={{ fontSize: 14, fontWeight: 400, color: 'var(--bt-ink-2)', lineHeight: 1.65, marginBottom: 12 }}>
                 4th Floor, Indiranagar Lane Tower, 100 Feet Road,<br />
                 HAL 2nd Stage, Bengaluru — 560038, India
               </p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0 36px' }}>
-                <span className="ft-body" style={{ fontSize: 11.5, fontWeight: 300, color: 'var(--bt-muted)' }}>Mon–Fri 10:00–19:00 IST</span>
-                <span className="ft-body" style={{ fontSize: 11.5, fontWeight: 300, color: 'var(--bt-muted)' }}>English · Hindi · Kannada</span>
+                <span className="ft-body" style={{ fontSize: 11.5, fontWeight: 400, color: 'var(--bt-muted)' }}>Mon–Fri 10:00–19:00 IST</span>
+                <span className="ft-body" style={{ fontSize: 11.5, fontWeight: 400, color: 'var(--bt-muted)' }}>English · Hindi · Kannada</span>
               </div>
             </div>
           </div>
@@ -103,7 +103,7 @@ export default function Contact() {
         {/* Manifesto */}
         <div className="reveal reveal-d3" style={{ textAlign: 'right', marginBottom: 56 }}>
           <blockquote className="ft-serif" style={{
-            fontStyle: 'italic', fontWeight: 300,
+            fontStyle: 'italic', fontWeight: 400,
             fontSize: 'clamp(1.125rem, 2vw, 1.6rem)',
             color: 'var(--bt-muted)', display: 'inline-block', maxWidth: 500,
             lineHeight: 1.5,

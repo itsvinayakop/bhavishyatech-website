@@ -30,7 +30,7 @@ export default function Process() {
   return (
     <section id="process" data-testid="process-section" className="section-glow"
       style={{ paddingTop: '8rem', paddingBottom: '8rem' }}>
-      <div style={{ maxWidth: 1320, margin: '0 auto', padding: '0 3rem' }}>
+      <div style={{ maxWidth: 1400, margin: '0 auto', padding: '0 2rem' }}>
 
         {/* Header */}
         <div className="reveal" style={{ display: 'grid', gridTemplateColumns: '5fr 7fr', gap: 64, marginBottom: 72 }}>
@@ -48,9 +48,9 @@ export default function Process() {
             </h2>
           </div>
           <div style={{ display: 'flex', alignItems: 'flex-end' }}>
-            <p className="ft-body" style={{ fontSize: 15.5, fontWeight: 300, color: 'var(--bt-muted)', lineHeight: 1.75 }}>
+            <p className="ft-body" style={{ fontSize: 17, fontWeight: 400, color: 'var(--bt-muted)', lineHeight: 1.7 }}>
               From first conversation to final launch — every project follows a{' '}
-              <span className="ft-serif" style={{ fontStyle: 'italic', fontWeight: 300, color: 'var(--bt-ink-2)', fontSize: '1.05em' }}>
+              <span className="ft-serif" style={{ fontStyle: 'italic', fontWeight: 400, color: 'var(--bt-ink-2)', fontSize: '1.05em' }}>
                 structured, transparent process
               </span>{' '}
               designed to deliver results without surprises.
@@ -122,8 +122,8 @@ export default function Process() {
 
                   {/* Right: description */}
                   <p className="ft-body" style={{
-                    fontSize: 14.5, fontWeight: 300, color: 'var(--bt-muted)',
-                    lineHeight: 1.75, paddingTop: 2,
+                    fontSize: 16, fontWeight: 400, color: 'var(--bt-muted)',
+                    lineHeight: 1.6, paddingTop: 2,
                   }}>
                     {step.desc}
                   </p>

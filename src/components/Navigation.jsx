@@ -5,6 +5,7 @@ const navLinks = [
   { label: 'CAPABILITIES', href: '#capabilities' },
   { label: 'PROCESS', href: '#process' },
   { label: 'TECHNOLOGY', href: '#technology' },
+  { label: 'CAREERS', href: '/careers', isExternal: true },
   { label: 'CONTACT', href: '#contact' },
 ];
 
@@ -54,19 +55,34 @@ export default function Navigation() {
         {/* Desktop links */}
         <div className="hidden lg:flex" style={{ alignItems: 'center', gap: 36 }}>
           {navLinks.map((l) => (
-            <a key={l.label} href={l.href} data-testid={`nav-${l.label.toLowerCase()}`}
-               onClick={(e) => go(e, l.href)}
-               className="ft-body"
-               style={{
-                 fontSize: 11, fontWeight: 500, letterSpacing: '0.24em',
-                 color: 'var(--bt-muted)', textDecoration: 'none',
-                 transition: 'color 0.4s ease, transform 0.4s ease',
-                 position: 'relative', paddingBottom: 2,
-               }}
-               onMouseEnter={(e) => { e.target.style.color = 'var(--bt-ink)'; }}
-               onMouseLeave={(e) => { e.target.style.color = 'var(--bt-muted)'; }}>
-              {l.label}
-            </a>
+            l.isExternal ? (
+              <a key={l.label} href={l.href} data-testid={`nav-${l.label.toLowerCase()}`}
+                 className="ft-body"
+                 style={{
+                   fontSize: 11, fontWeight: 500, letterSpacing: '0.24em',
+                   color: 'var(--bt-muted)', textDecoration: 'none',
+                   transition: 'color 0.4s ease, transform 0.4s ease',
+                   position: 'relative', paddingBottom: 2,
+                 }}
+                 onMouseEnter={(e) => { e.target.style.color = 'var(--bt-ink)'; }}
+                 onMouseLeave={(e) => { e.target.style.color = 'var(--bt-muted)'; }}>
+                {l.label}
+              </a>
+            ) : (
+              <a key={l.label} href={l.href} data-testid={`nav-${l.label.toLowerCase()}`}
+                 onClick={(e) => go(e, l.href)}
+                 className="ft-body"
+                 style={{
+                   fontSize: 11, fontWeight: 500, letterSpacing: '0.24em',
+                   color: 'var(--bt-muted)', textDecoration: 'none',
+                   transition: 'color 0.4s ease, transform 0.4s ease',
+                   position: 'relative', paddingBottom: 2,
+                 }}
+                 onMouseEnter={(e) => { e.target.style.color = 'var(--bt-ink)'; }}
+                 onMouseLeave={(e) => { e.target.style.color = 'var(--bt-muted)'; }}>
+                {l.label}
+              </a>
+            )
           ))}
         </div>
 

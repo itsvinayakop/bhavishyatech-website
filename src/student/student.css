@@ -1,0 +1,187 @@
+/* Sweeping Corp Inspired Aesthetic: Bold, High-Contrast, Industrial-Premium */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800;900&display=swap');
+
+html:has(.student-experience-root) {
+  scroll-behavior: smooth;
+  background-color: #FFFFFF;
+}
+
+.student-experience-root {
+  background-color: #FFFFFF;
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  color: #111111;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+.student-experience-root * {
+  box-sizing: border-box;
+}
+
+/* Sweeping Corp Design Tokens */
+:root {
+  --sw-yellow: #FFD700; /* Bold Signature Yellow */
+  --sw-black: #111111;
+  --sw-white: #FFFFFF;
+  --sw-gray: #F5F5F5;
+  --sw-dark-gray: #222222;
+  --sw-text-muted: #666666;
+}
+
+/* Typography System */
+.ft-outfit {
+  font-family: 'Outfit', sans-serif;
+}
+
+.student-title-lg {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(3.5rem, 8vw, 6.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--sw-black);
+}
+
+.student-section-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.student-subtitle {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  color: var(--sw-text-muted);
+  max-width: 700px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* Section Layouts */
+.student-section {
+  padding: 10rem 5vw;
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Bold Buttons */
+.student-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem 2.5rem;
+  background: var(--sw-black);
+  color: var(--sw-white);
+  text-transform: uppercase;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+}
+
+.student-btn:hover {
+  background: var(--sw-yellow);
+  color: var(--sw-black);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+}
+
+.student-btn.secondary {
+  background: transparent;
+  color: var(--sw-black);
+  border: 3px solid var(--sw-black);
+}
+
+.student-btn.secondary:hover {
+  background: var(--sw-black);
+  color: var(--sw-white);
+}
+
+/* Interactive Reveal */
+.student-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.student-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Highlight Box */
+.highlight-box {
+  background: var(--sw-yellow);
+  padding: 0.25rem 0.5rem;
+  color: var(--sw-black);
+}
+
+/* Navigation */
+.student-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 2px solid var(--sw-black);
+}
+
+.nav-link {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  color: var(--sw-black);
+  text-decoration: none;
+  margin-left: 3rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--sw-yellow);
+}
+
+/* Card System */
+.sw-card {
+  background: var(--sw-gray);
+  border-left: 8px solid var(--sw-black);
+  padding: 4rem;
+  transition: all 0.4s ease;
+}
+
+.sw-card:hover {
+  border-left-color: var(--sw-yellow);
+  background: #FFFFFF;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.05);
+}
+
+/* Footer */
+.student-footer {
+  background: var(--sw-black);
+  color: var(--sw-white);
+  padding: 6rem 5vw;
+}

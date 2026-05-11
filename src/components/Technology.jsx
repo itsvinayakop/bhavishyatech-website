@@ -32,7 +32,7 @@ export default function Technology() {
         pointerEvents: 'none',
       }} />
 
-      <div style={{ maxWidth: 1320, margin: '0 auto', padding: '0 3rem', position: 'relative' }}>
+      <div style={{ maxWidth: 1400, margin: '0 auto', padding: '0 2rem', position: 'relative' }}>
 
         {/* Header */}
         <div className="reveal" style={{ display: 'grid', gridTemplateColumns: '5fr 7fr', gap: 64, marginBottom: 64 }}>
@@ -50,9 +50,9 @@ export default function Technology() {
             </h2>
           </div>
           <div style={{ display: 'flex', alignItems: 'flex-end' }}>
-            <p className="ft-body" style={{ fontSize: 15.5, fontWeight: 300, color: 'var(--bt-muted)', lineHeight: 1.75 }}>
+            <p className="ft-body" style={{ fontSize: 17, fontWeight: 400, color: 'var(--bt-muted)', lineHeight: 1.7 }}>
               We use trusted modern technologies to build fast, secure, and scalable solutions.{' '}
-              <span className="ft-serif" style={{ fontStyle: 'italic', fontWeight: 300, color: 'var(--bt-ink-2)', fontSize: '1.05em' }}>
+              <span className="ft-serif" style={{ fontStyle: 'italic', fontWeight: 400, color: 'var(--bt-ink-2)', fontSize: '1.05em' }}>
                 Every product is designed for smooth performance and long-term reliability.
               </span>
             </p>
@@ -88,7 +88,7 @@ export default function Technology() {
                 Fast &<br />Responsive
               </h3>
               <p className="ft-body" style={{
-                fontSize: 14.5, fontWeight: 300, color: 'var(--bt-muted)',
+                fontSize: 16, fontWeight: 400, color: 'var(--bt-muted)',
                 lineHeight: 1.7, marginBottom: 24,
               }}>
                 Websites and applications optimized for speed, smooth interactions, and flawless performance across every device.
@@ -101,7 +101,7 @@ export default function Technology() {
                   {'<'}0.3s
                 </span>
                 <span className="ft-body" style={{
-                  fontSize: 11, fontWeight: 300, color: 'var(--bt-muted-2)',
+                  fontSize: 11, fontWeight: 400, color: 'var(--bt-muted-2)',
                   display: 'block', marginTop: 4, letterSpacing: '0.08em',
                 }}>
                   average load time
@@ -176,8 +176,8 @@ export default function Technology() {
               Secure<br />Systems
             </h3>
             <p className="ft-body" style={{
-              fontSize: 14, fontWeight: 300, color: 'var(--bt-muted)',
-              lineHeight: 1.7,
+              fontSize: 16, fontWeight: 400, color: 'var(--bt-muted)',
+              lineHeight: 1.6,
             }}>
               Modern security practices to keep your business data protected and your users' trust intact.
             </p>
@@ -216,7 +216,7 @@ export default function Technology() {
             <h3 className="ft-display" style={{ fontSize: 19, fontWeight: 500, letterSpacing: '-0.02em', color: 'var(--bt-ink)', marginBottom: 10, lineHeight: 1.25 }}>
               Mobile Friendly
             </h3>
-            <p className="ft-body" style={{ fontSize: 13.5, fontWeight: 300, color: 'var(--bt-muted)', lineHeight: 1.65 }}>
+            <p className="ft-body" style={{ fontSize: 16, fontWeight: 400, color: 'var(--bt-muted)', lineHeight: 1.6 }}>
               Solutions that work seamlessly across phones, tablets, and desktops.
             </p>
           </div>
@@ -236,7 +236,7 @@ export default function Technology() {
             <h3 className="ft-display" style={{ fontSize: 19, fontWeight: 500, letterSpacing: '-0.02em', color: 'var(--bt-ink)', marginBottom: 10, lineHeight: 1.25 }}>
               Scalable Architecture
             </h3>
-            <p className="ft-body" style={{ fontSize: 13.5, fontWeight: 300, color: 'var(--bt-muted)', lineHeight: 1.65 }}>
+            <p className="ft-body" style={{ fontSize: 16, fontWeight: 400, color: 'var(--bt-muted)', lineHeight: 1.6 }}>
               Software designed to grow as your business grows — from 10 users to 10,000.
             </p>
           </div>
@@ -256,7 +256,7 @@ export default function Technology() {
             <h3 className="ft-display" style={{ fontSize: 19, fontWeight: 500, letterSpacing: '-0.02em', color: 'var(--bt-ink)', marginBottom: 10, lineHeight: 1.25 }}>
               Easy Management
             </h3>
-            <p className="ft-body" style={{ fontSize: 13.5, fontWeight: 300, color: 'var(--bt-muted)', lineHeight: 1.65 }}>
+            <p className="ft-body" style={{ fontSize: 16, fontWeight: 400, color: 'var(--bt-muted)', lineHeight: 1.6 }}>
               Admin panels and dashboards built for simple daily operations — no tech skills needed.
             </p>
           </div>
@@ -290,7 +290,7 @@ export default function Technology() {
               Modern AI Integration
             </h3>
           </div>
-          <p className="ft-body" style={{ fontSize: 13.5, fontWeight: 300, color: 'var(--bt-muted)', lineHeight: 1.65 }}>
+          <p className="ft-body" style={{ fontSize: 16, fontWeight: 400, color: 'var(--bt-muted)', lineHeight: 1.6 }}>
             Smart chatbots, WhatsApp automation, workflow automation, and AI-powered business tools — making your operations faster and smarter.
           </p>
         </div>

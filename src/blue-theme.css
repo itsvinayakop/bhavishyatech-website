@@ -2,35 +2,35 @@
 
 /* ===== DESIGN TOKENS ===== */
 :root {
-  --bt-bg: #F5EFE4;
-  --bt-bg-2: #EFE7D8;
-  --bt-surface: #FAF6ED;
-  --bt-surface-2: #FFFAF0;
-  --bt-ink: #1A1814;
-  --bt-ink-2: #2C2924;
-  --bt-muted: #4A443C;
-  --bt-muted-2: #736B5E;
-  --bt-bronze: #8B6F2F;
-  --bt-bronze-bright: #B08A3D;
-  --bt-border: rgba(40,30,20,0.08);
-  --bt-border-strong: rgba(40,30,20,0.18);
+  --bt-bg: #FFFFFF; /* Pure White */
+  --bt-bg-2: #F3F4F6; /* Crisp cool gray for sections */
+  --bt-surface: #FFFFFF; /* Pure white cards */
+  --bt-surface-2: #F9FAFB; /* Very light gray surface */
+  --bt-ink: #030712; /* Pitch Black for maximum contrast */
+  --bt-ink-2: #111827; /* Very Dark Slate */
+  --bt-muted: #4B5563; /* Medium dark gray - highly readable */
+  --bt-muted-2: #6B7280; /* Standard gray */
+  --bt-bronze: #4F46E5; /* Electric Indigo (Premium Tech Accent) */
+  --bt-bronze-bright: #6366F1; /* Brighter Indigo */
+  --bt-border: #E5E7EB; /* Crisp light gray borders */
+  --bt-border-strong: #D1D5DB; /* Stronger gray borders */
   --cursor-x: 50%;
   --cursor-y: 50%;
 }
 
 @theme {
-  --color-bg: #F5EFE4;
-  --color-bg-2: #EFE7D8;
-  --color-surface: #FAF6ED;
-  --color-surface-2: #FFFAF0;
-  --color-ink: #1A1814;
-  --color-ink-2: #2C2924;
-  --color-muted: #4A443C;
-  --color-muted-2: #736B5E;
-  --color-bronze: #8B6F2F;
-  --color-bronze-bright: #B08A3D;
-  --color-bt-border: rgba(40,30,20,0.08);
-  --color-bt-border-strong: rgba(40,30,20,0.18);
+  --color-bg: #FFFFFF;
+  --color-bg-2: #F3F4F6;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #F9FAFB;
+  --color-ink: #030712;
+  --color-ink-2: #111827;
+  --color-muted: #4B5563;
+  --color-muted-2: #6B7280;
+  --color-bronze: #4F46E5;
+  --color-bronze-bright: #6366F1;
+  --color-bt-border: #E5E7EB;
+  --color-bt-border-strong: #D1D5DB;
 }
 
 /* ===== GLOBAL ===== */
@@ -80,7 +80,7 @@ p, dd, span, blockquote, h3 {
 }
 .hover-card:hover {
   background: #FFFFFF !important;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.02), inset 0 0 0 1px rgba(154,123,79,0.15);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.04), inset 0 0 0 1px rgba(79, 70, 229, 0.2);
 }
 
 /* ===== PREMIUM PAPER TEXTURE ===== */
@@ -104,7 +104,7 @@ body::after {
   pointer-events: none;
   background: radial-gradient(
     600px circle at var(--cursor-x) var(--cursor-y),
-    rgba(154, 123, 79, 0.04) 0%,
+    rgba(79, 70, 229, 0.03) 0%,
     transparent 60%
   );
   transition: background 0.3s ease;
@@ -156,7 +156,7 @@ body::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, transparent 0%, rgba(154,123,79,0.06) 100%);
+  background: linear-gradient(135deg, transparent 0%, rgba(79, 70, 229, 0.08) 100%);
   opacity: 0;
   transition: opacity 0.5s ease;
 }
@@ -171,7 +171,7 @@ body::after {
   background-color: var(--bt-ink-2);
   border-color: var(--bt-bronze);
   transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(26,24,20,0.12);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
 }
 
 .btn-outline {
@@ -217,7 +217,7 @@ body::after {
 
 /* ===== NAV ===== */
 .nav-float {
-  background: rgba(253, 252, 248, 0.85);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(24px) saturate(1.4);
   -webkit-backdrop-filter: blur(24px) saturate(1.4);
   border-bottom: 1px solid rgba(0,0,0,0.06);
@@ -227,8 +227,8 @@ body::after {
 /* ===== ARCHITECTURAL GRID ===== */
 .arch-grid {
   background-image:
-    linear-gradient(rgba(154,123,79,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(154,123,79,0.04) 1px, transparent 1px);
+    linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
   background-size: 120px 120px;
 }
 
@@ -280,8 +280,8 @@ body::after {
 }
 .cap-card:hover {
   transform: translateY(-3px);
-  border-color: rgba(154,123,79,0.25);
-  box-shadow: 0 12px 48px rgba(0,0,0,0.06), 0 0 0 1px rgba(154,123,79,0.1);
+  border-color: rgba(79, 70, 229, 0.25);
+  box-shadow: 0 12px 48px rgba(0,0,0,0.08), 0 0 0 1px rgba(79, 70, 229, 0.15);
   background: #FFFFFF !important;
 }
 .cap-card:hover::after {
@@ -458,56 +458,5 @@ body::after {
 .vision-reveal.is-visible {
   opacity: 1;
   transform: translateY(0) scale(1);
-}
-
-/* ===== MOBILE RESPONSIVENESS FIXES ===== */
-@media (max-width: 1024px) {
-  /* Force all main structural inline grids to stack vertically on mobile */
-  section [style*="grid-template-columns"]:not(.no-mobile-stack),
-  footer [style*="grid-template-columns"]:not(.no-mobile-stack) {
-    grid-template-columns: 1fr !important;
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 2rem !important;
-  }
-  
-  /* Remove borders that look odd when stacked */
-  .hover-card[style*="border-left"] {
-    border-left: none !important;
-    border-top: 1px solid var(--bt-border);
-  }
-  
-  /* Adjust hero typography for mobile */
-  h1.ft-display {
-    font-size: 3rem !important;
-  }
-  h2.ft-display {
-    font-size: 2rem !important;
-  }
-  
-  /* Adjust global section padding */
-  section {
-    padding-top: 5rem !important;
-    padding-bottom: 5rem !important;
-  }
-  
-  /* Fix the process step indicator stacking */
-  [data-testid^="process-step"] {
-    flex-direction: row !important; /* Keep process steps side-by-side on mobile */
-    align-items: flex-start;
-  }
-  
-  /* Ensure SVGs in hero scale down */
-  svg.hero-orbital {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-@media (max-width: 768px) {
-  /* Hide the desktop-only buttons/elements */
-  .hidden.md\:flex {
-    display: none !important;
-  }
 }
 

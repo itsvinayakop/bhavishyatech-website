@@ -140,7 +140,7 @@ export default function Hero() {
         pointerEvents: 'none',
       }} />
 
-      <div style={{ maxWidth: 1320, margin: '0 auto', padding: '0 3rem', position: 'relative' }}>
+      <div style={{ maxWidth: 1400, margin: '0 auto', padding: '0 2rem', position: 'relative' }}>
 
         {/* Top label strip */}
         <div className="reveal" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 56 }}>
@@ -155,23 +155,20 @@ export default function Hero() {
         </div>
 
         {/* === MAIN HERO GRID: Left content + Right visual === */}
-        <div style={{
-          display: 'grid', gridTemplateColumns: '7fr 5fr',
-          gap: 48, alignItems: 'center', minHeight: 420,
-        }}>
+        <div className="grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-12 items-center min-h-[420px]">
 
           {/* LEFT — headline → text → CTA, all anchored together */}
           <div>
             {/* Headline */}
             <div className="reveal">
               <h1 className="ft-display" style={{
-                fontWeight: 500, lineHeight: 1.0, letterSpacing: '-0.035em',
-                fontSize: 'clamp(2.25rem, 5.8vw, 5.25rem)',
+                fontWeight: 500, lineHeight: 0.95, letterSpacing: '-0.04em',
+                fontSize: 'clamp(2.5rem, 6.5vw, 6rem)',
                 color: 'var(--bt-ink)', marginBottom: 32,
               }}>
                 Engineering<br />
                 tomorrow's <span className="ft-serif" style={{
-                  fontStyle: 'italic', fontWeight: 300,
+                  fontStyle: 'italic', fontWeight: 400,
                   background: 'linear-gradient(135deg, var(--bt-bronze) 20%, var(--bt-bronze-bright) 80%)',
                   WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
                 }}>software</span><br />
@@ -182,8 +179,8 @@ export default function Hero() {
             {/* Supporting paragraph — directly under headline */}
             <div className="reveal reveal-d1">
               <p className="ft-body" style={{
-                fontSize: 15.5, fontWeight: 300, color: 'var(--bt-muted)',
-                lineHeight: 1.8, maxWidth: 480, marginBottom: 36,
+                fontSize: 20, fontWeight: 400, color: 'var(--bt-ink-2)',
+                lineHeight: 1.6, maxWidth: 640, marginBottom: 44,
               }}>
                 Bhavishya Tech is an Indian technology atelier building intelligent digital
                 systems — engineered with precision, designed for scale, architected for
@@ -227,7 +224,7 @@ export default function Hero() {
                 fontSize: 'clamp(1.5rem, 3vw, 2.25rem)',
                 fontWeight: 500, letterSpacing: '-0.02em', color: 'var(--bt-ink)',
               }}>{s.value}</div>
-              <div className="ft-body" style={{ fontSize: 13, fontWeight: 300, color: 'var(--bt-muted)', marginTop: 4 }}>
+              <div className="ft-body" style={{ fontSize: 13, fontWeight: 400, color: 'var(--bt-muted)', marginTop: 4 }}>
                 {s.label}
               </div>
             </div>

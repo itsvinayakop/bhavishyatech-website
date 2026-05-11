@@ -7,7 +7,7 @@ export default function Footer() {
         borderTop: '1px solid var(--bt-border)',
       }}>
       <div style={{
-        maxWidth: 1320, margin: '0 auto', padding: '0 3rem',
+        maxWidth: 1400, margin: '0 auto', padding: '0 2rem',
         display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', alignItems: 'center',
       }}>
         {/* Logo */}
@@ -20,21 +20,21 @@ export default function Footer() {
           }}>
             <span className="ft-display" style={{ fontSize: 11, fontWeight: 600, color: '#FDF8EE', lineHeight: 1 }}>B</span>
           </div>
-          <span className="ft-display" style={{ fontSize: 11, fontWeight: 500, letterSpacing: '0.18em', color: 'var(--bt-ink)' }}>
+           <span className="ft-display" style={{ fontSize: 13, fontWeight: 500, letterSpacing: '0.18em', color: 'var(--bt-ink)' }}>
             BHAVISHYA <span style={{ color: 'var(--bt-bronze)', fontWeight: 400 }}>Tech</span>
           </span>
         </div>
 
         {/* Center */}
         <div style={{ textAlign: 'center' }}>
-          <span className="ft-body" style={{ fontSize: 10, fontWeight: 300, color: 'var(--bt-muted-2)', letterSpacing: '0.28em', textTransform: 'uppercase' }}>
+          <span className="ft-body" style={{ fontSize: 11, fontWeight: 400, color: 'var(--bt-muted-2)', letterSpacing: '0.28em', textTransform: 'uppercase' }}>
             ENGINEERED IN INDIA · FOR THE WORLD
           </span>
         </div>
 
         {/* Right */}
         <div style={{ textAlign: 'right' }}>
-          <span className="ft-body" style={{ fontSize: 11, fontWeight: 300, color: 'var(--bt-muted-2)' }}>
+          <span className="ft-body" style={{ fontSize: 11, fontWeight: 400, color: 'var(--bt-muted-2)' }}>
             © {new Date().getFullYear()} Bhavishya Tech. All rights reserved.
           </span>
         </div>
