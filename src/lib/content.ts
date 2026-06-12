@@ -13,7 +13,10 @@ export const NAV_LINKS = [
   { label: "Portfolio", href: "#portfolio" },
   { label: "Why Us", href: "#why" },
   { label: "Pricing", href: "#pricing" },
+  { label: "Careers", href: "/careers" },
 ];
+
+export const CAREERS_URL = "https://careers.bhavishyatech.com";
 
 export const TRUST_CHIPS = ["Healthcare", "Restaurants", "Clinics", "Retail"];
 

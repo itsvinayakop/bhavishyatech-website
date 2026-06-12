@@ -21,6 +21,7 @@ const cols = [
       { label: "Why Us", href: "#why" },
       { label: "Pricing", href: "#pricing" },
       { label: "Process", href: "#how" },
+      { label: "Careers", href: "/careers" },
     ],
   },
   {
