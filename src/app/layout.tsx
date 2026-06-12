@@ -2,10 +2,6 @@ import type { Metadata } from "next";
 import { Syne, Nunito_Sans, Baloo_2 } from "next/font/google";
 import "./globals.css";
 import { SITE } from "@/lib/content";
-import SmoothScroll from "@/components/layout/SmoothScroll";
-import CustomCursor from "@/components/layout/CustomCursor";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -91,12 +87,7 @@ export default function RootLayout({
           }}
         />
         <div className="noise-layer" aria-hidden />
-        <CustomCursor />
-        <SmoothScroll>
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
-        </SmoothScroll>
+        {children}
       </body>
     </html>
   );
