@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { LogoLockup } from "@/components/ui/Logo";
-import { SITE } from "@/lib/content";
+import { SITE, CAREERS_URL } from "@/lib/content";
 
 const cols = [
   {
@@ -21,7 +21,7 @@ const cols = [
       { label: "Why Us", href: "#why" },
       { label: "Pricing", href: "#pricing" },
       { label: "Process", href: "#how" },
-      { label: "Careers", href: "/careers" },
+      { label: "Careers", href: CAREERS_URL },
     ],
   },
   {

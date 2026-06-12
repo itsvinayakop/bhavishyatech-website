@@ -1,3 +1,5 @@
+export const CAREERS_URL = "https://careers.bhavishyatech.com";
+
 export const SITE = {
   name: "Bhavishya Tech",
   domain: "https://www.bhavishyatech.com",
@@ -13,10 +15,9 @@ export const NAV_LINKS = [
   { label: "Portfolio", href: "#portfolio" },
   { label: "Why Us", href: "#why" },
   { label: "Pricing", href: "#pricing" },
-  { label: "Careers", href: "/careers" },
+  { label: "Careers", href: CAREERS_URL },
 ];
 
-export const CAREERS_URL = "https://careers.bhavishyatech.com";
 
 export const TRUST_CHIPS = ["Healthcare", "Restaurants", "Clinics", "Retail"];
 
