@@ -80,9 +80,9 @@ export default function HeroDevanagari() {
             We build{" "}
             <motion.span
               key={HEAD_WORDS[wi]}
-              initial={{ opacity: 0, y: "0.35em" }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.45, ease: EASE }}
+              initial={{ y: "0.4em" }}
+              animate={{ y: 0 }}
+              transition={{ duration: 0.4, ease: EASE }}
               className="inline-block text-grad-v"
             >
               {HEAD_WORDS[wi]}
