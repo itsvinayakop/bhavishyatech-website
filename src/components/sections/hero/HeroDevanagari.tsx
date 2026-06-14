@@ -10,7 +10,7 @@ import { useSpotlight } from "./useSpotlight";
 import { EASE } from "@/lib/utils";
 
 const DEVA = ["भ", "वि", "ष्य"];
-const HEAD_WORDS = ["software", "automation", "infrastructure", "intelligence", "technology"];
+const HEAD_WORDS = ["software", "automation", "technology"];
 
 const glyphContainer: Variants = {
   hidden: {},
@@ -74,19 +74,23 @@ export default function HeroDevanagari() {
           initial="hidden"
           animate="show"
           custom={1.05}
-          className="mt-5 font-display font-extrabold leading-[1.07] tracking-tight text-[clamp(2.2rem,5.8vw,4.5rem)]"
+          className="mt-5 font-display font-extrabold leading-[1.08] tracking-tight text-[clamp(1.85rem,4.9vw,3.9rem)]"
         >
-          We build{" "}
-          <motion.span
-            key={HEAD_WORDS[wi]}
-            initial={{ opacity: 0, y: "0.35em" }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.45, ease: EASE }}
-            className="inline-block whitespace-nowrap text-grad-v"
-          >
-            {HEAD_WORDS[wi]}
-          </motion.span>{" "}
-          that <span className="text-grad-r">scales.</span>
+          <span className="block sm:whitespace-nowrap">
+            We build{" "}
+            <motion.span
+              key={HEAD_WORDS[wi]}
+              initial={{ opacity: 0, y: "0.35em" }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.45, ease: EASE }}
+              className="inline-block text-grad-v"
+            >
+              {HEAD_WORDS[wi]}
+            </motion.span>
+          </span>
+          <span className="block">
+            that <span className="text-grad-r">scales.</span>
+          </span>
         </motion.p>
 
         <motion.p
